@@ -1,0 +1,44 @@
+@mixin card-styles {
+    .boat {
+        padding-bottom: 1rem;
+    }
+    .time-read {
+        font-size: $base-font-size;
+        color: $color-light-gray-3;
+        padding-bottom: 1rem;
+        font-weight: 300;
+        .engineer {
+            background-color: #DEDEE0;
+            padding: 0.3rem 1rem;
+            color: #54555F;
+            border-radius: 9px;
+            border: 2px solid $color-light-gray-3;
+        }
+        .period {
+            padding-left: 0.75rem;
+            padding-right: 0.75rem;
+        }
+    }
+    h1 {
+        font-size: $font-size-xl;
+        font-weight: $base-font-weight + 300;
+        letter-spacing: .15rem;
+        padding-bottom: 1rem;
+    }
+    .description {
+        font-size: $base-font-size + 0.1rem;
+        line-height: 2rem;
+        font-weight: $base-font-weight;
+        padding-bottom: 1rem;
+        color: #202026;
+    }
+    .profile {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        align-items: center;
+        p {
+            font-size: $font-size-md - .35rem;
+        }
+    }
+}

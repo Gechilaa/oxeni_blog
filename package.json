@@ -1,0 +1,17 @@
+{
+  "name": "oxeni",
+  "version": "1.0.0",
+  "description": "This Is My First Serious Project About SCSS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Tornike Gachechiladze",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-purgecss": "^5.0.0",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.62.0"
+  }
+}

@@ -1,0 +1,189 @@
+.card-lists {
+    display: flex;
+    flex-direction: column;
+    gap: 10rem;
+    .main-card {
+        margin-top: 5rem;
+        max-width: 54rem;
+        width: 100%;
+        margin-left: auto;
+        @include card-styles;
+        img.boat {
+            width: 100%;
+        }
+    }
+    .cards {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        gap: 4rem;
+        row-gap: 10rem;
+        .card {
+            max-width: 25rem;
+            width: 100%;
+            @include card-styles;
+            .picture {
+                margin-bottom: 1rem;
+                width: 100%;
+                object-fit: fill;
+            }
+            .time-read {
+                padding-bottom: 0.725rem;
+            }
+    
+            h1 {
+                font-size: $font-size-md + 0.25rem;
+                font-weight: $base-font-weight + 300;
+                padding-bottom: 1rem;
+                letter-spacing: 0.025rem;
+            }
+            .description {
+                font-size: $base-font-size + 0.1rem;
+                line-height: 2rem;
+                font-weight: $base-font-weight - 100;
+                padding-bottom: 1rem;
+                color: $color-gray;
+            }
+        }
+    }
+    
+    .pack-of-cards {
+        width: 70vw;
+        margin: 25vh auto;
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            column-gap: 75px;
+            row-gap: 93px;
+            .card {
+                @include card-styles;
+    
+                .picture {
+                    width: 100%;
+                    margin-bottom: 1rem;
+                    object-fit: fill;
+                }
+                .time-read {
+                    padding-bottom: 0.725rem;
+                }
+    
+                h1 {
+                    font-size: $font-size-md + 0.25rem;
+                    font-weight: $base-font-weight + 300;
+                    padding-bottom: 1rem;
+                    letter-spacing: .025rem;
+                }
+                .description {
+                    font-size: $base-font-size + 0.1rem;
+                    line-height: 2rem;
+                    font-weight: $base-font-weight - 100;
+                    padding-bottom: 1rem;
+                    color: $color-gray;
+                }
+            }
+        }    
+    }
+}
+
+.pack-of-cards {
+    width: 70vw;
+    margin: 25vh auto;
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        column-gap: 75px;
+        row-gap: 93px;
+        .card {
+            @include card-styles;
+
+            .picture {
+                width: 100%;
+                margin-bottom: 1rem;
+                object-fit: fill;
+            }
+            .time-read {
+                padding-bottom: 0.725rem;
+            }
+
+            h1 {
+                font-size: $font-size-md + 0.25rem;
+                font-weight: $base-font-weight + 300;
+                padding-bottom: 1rem;
+                letter-spacing: .025rem;
+            }
+            .description {
+                font-size: $base-font-size + 0.1rem;
+                line-height: 2rem;
+                font-weight: $base-font-weight - 100;
+                padding-bottom: 1rem;
+                color: $color-gray;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 104.375rem) {
+    .cards {
+        display: grid !important;
+        grid-template-columns: 1fr 1fr;
+        .card {
+            max-width: 100% !important;
+        }
+    }
+}
+
+@media screen and (max-width: 80rem) {
+    .card-lists {
+        .main-card {
+            width: 100%;
+            padding: 0;
+            padding-top: 2rem !important;
+            .boat {
+                width: 70vw;
+            }
+            h1 {
+                font-size: $font-size-lg;
+            }
+        }
+    }
+        .cards {
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            .card {
+                padding-left: 0;
+                max-width: none !important;
+            }
+        }
+
+    .pack-of-cards {
+        border-top: 2px solid $color-light-gray;
+        .cards {
+            grid-template-columns: repeat(2, 1fr) !important;
+            grid-template-rows: repeat(3, 1fr) !important;
+            padding-top: 2rem;
+        }
+    }
+}
+
+@media screen and (max-width: 50rem) {
+    .card-lists {
+        .cards {
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr;
+            .card {
+                max-width: none;
+            }
+        }
+    }
+
+
+    .pack-of-cards {
+        .cards {
+            grid-template-columns: 1fr !important;
+            grid-template-rows: 1fr !important;
+        }
+    }
+}

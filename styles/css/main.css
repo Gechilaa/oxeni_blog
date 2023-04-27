@@ -58,8 +58,6 @@ button img {
 
 .container {
   display: grid;
-  max-width: 70vw;
-  width: 100%;
   margin: 25vh auto 0;
   grid-template-columns: 0.45fr 1.5fr;
   grid-gap: 1rem;
@@ -67,6 +65,11 @@ button img {
   border-top-color: #f1f0f2;
   border-top-width: 2px;
   border-top-style: solid;
+}
+
+.base_container {
+  max-width: 80rem;
+  width: 90vw;
 }
 
 @media screen and (max-width: 80rem) {

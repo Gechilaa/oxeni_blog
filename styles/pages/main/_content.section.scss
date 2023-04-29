@@ -73,6 +73,9 @@
             }
         }
         .cards-list {
+            padding-left: 0;
+            margin-top: 5rem;
+            border-top: 2px solid $color-light-main-gray;
             .card-columns {
                 max-width: 100%;
                 @include card-styles;

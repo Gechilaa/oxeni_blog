@@ -694,6 +694,11 @@ button img {
     max-width: 100%;
     width: 100%;
   }
+  ._container .cards-list {
+    padding-left: 0;
+    margin-top: 5rem;
+    border-top: 2px solid #f1f0f2;
+  }
   ._container .cards-list .card-columns {
     max-width: 100%;
   }

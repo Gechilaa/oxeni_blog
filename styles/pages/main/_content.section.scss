@@ -1,0 +1,81 @@
+._container{
+    .content {
+        padding-top: 5rem;
+        padding-right: 5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 2rem;
+        border-right: 2px solid $color-light-main-gray;
+        h1 {
+            font-size: $font-size-xl;
+            line-height: 3.5rem;
+            font-weight: $base-font-weight + 300;
+            letter-spacing: 0.1rem;
+        }
+        h2 {
+            font-size: $font-size-xl - 0.825rem;
+            letter-spacing: 0.1rem;
+            font-weight: $base-font-weight + 300;
+        }
+        h3 {
+            font-size: $font-size-lg;
+            letter-spacing: 0.1rem;
+            font-weight: $base-font-weight + 300;
+        }
+        p {
+            font-size: 1.2rem;
+            line-height: 2rem;
+            font-weight: $base-font-weight;
+        }
+        img {
+            max-width: 50rem;
+            width: 100%;
+        }
+        .boat-image {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+            span {
+                font-size: $font-size-md;
+                font-weight: $base-font-weight - 100;
+                color: #9A9BA1;
+                margin: 0 auto;
+            }
+        }
+    }
+
+    .cards-list {
+        padding-top: 5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 7rem;
+        .card-columns {
+            margin-left: auto;
+            @include little-card-styles;
+        }
+    }
+}
+
+@media screen and (max-width: 80rem) {
+    ._container {
+        .content {
+            border-right: none;
+            padding-right: 0;
+            .boat-image {
+                width: 100%;
+            }
+            img {
+                max-width: 100%;
+                width: 100%;
+            }
+        }
+        .cards-list {
+            .card-columns {
+                max-width: 100%;
+                @include card-styles;
+            }
+        }
+    }   
+}

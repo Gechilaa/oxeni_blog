@@ -139,14 +139,19 @@
 @media screen and (max-width: 80rem) {
     .card-lists {
         .main-card {
+            max-width: 100%;
             width: 100%;
             padding: 0;
             padding-top: 2rem !important;
             .boat {
                 width: 70vw;
+                max-width: 100%;
             }
             h1 {
-                font-size: $font-size-lg;
+                font-size: $font-size-xl;
+            }
+            .description {
+                font-size: $font-size-md - 0.3rem;
             }
         }
     }
@@ -161,6 +166,8 @@
 
     .pack-of-cards {
         border-top: 2px solid $color-light-gray;
+        max-width: 80rem;
+        width: 90vw;
         .cards {
             grid-template-columns: repeat(2, 1fr) !important;
             grid-template-rows: repeat(3, 1fr) !important;

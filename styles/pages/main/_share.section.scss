@@ -1,0 +1,30 @@
+.sharing-section {
+    display: none;
+}
+
+@media screen and (max-width: 80rem) {
+    .sharing-section {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        align-items: center;
+        justify-content: center;
+        margin: 5rem 0 2rem;
+        .share {
+            font-size: $font-size-md - 0.25rem;
+            color: $color-light-gray-3;
+        }
+        .socials {
+            display: flex;
+            flex-direction: row;
+            gap: 1rem;
+            border: $border-socials;
+            padding: 0.7rem 1rem;
+            gap: 1rem;
+            border-radius: 0.5rem;
+            img {
+                cursor: pointer;
+            }
+        }
+    }
+}

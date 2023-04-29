@@ -9,6 +9,17 @@
     border-top-style: solid;
 }
 
+._container {
+    display: grid;
+    margin: 5rem auto 0;
+    grid-template-columns: 1.4fr 0.6fr;
+    grid-gap: 1rem;
+    gap: 1rem;
+    border-top-color: $color-light-main-gray;
+    border-top-width: 2px;
+    border-top-style: solid;
+}
+
 .base_container{
     max-width: 80rem;
     width: 90vw;
@@ -16,6 +27,10 @@
 
 @media screen and (max-width: 80rem) {
     .container {
+        grid-template-columns: 1fr;
+    }
+
+    ._container {
         grid-template-columns: 1fr;
     }
 }

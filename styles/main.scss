@@ -1,6 +1,7 @@
 // Variables //
 @import 'abstracts/variables.color';
 @import 'fonts/font.variables';
+@import 'abstracts/mixins';
 
 // Base //
 @import 'base/base';
@@ -8,7 +9,7 @@
 // Components //
 @import 'components/global/navigation';
 @import 'components/lib/buttons';
-@import 'components/lib/cards';
+@import 'components/lib/tags';
 
 // Utilities //
 @import 'util/main.container';
@@ -16,3 +17,8 @@
 // Landing Page //
 @import 'pages/landing/sidebar';
 @import 'pages/landing/landing.cards';
+
+// Main Page //
+@import 'pages/main/hero.section';
+@import 'pages/main/content.section';
+@import 'pages/main/share.section'

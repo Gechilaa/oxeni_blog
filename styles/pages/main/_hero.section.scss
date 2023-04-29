@@ -1,0 +1,109 @@
+.hero-section {
+    display: flex;
+    flex-direction: column;
+    margin: 25vh auto 0;
+    gap: 5rem;
+    .hero-card-content {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        .card-content {
+            .time-read {
+                font-size: $font-size-md - 0.25rem;
+                color: $color-light-gray-3;
+                padding-bottom: 1rem;
+                font-weight: $base-font-weight;
+                .period {
+                    padding-left: 0.75rem;
+                    padding-right: 0.75rem;
+                }
+                .date {
+                    padding-left: 1.5rem;
+                }
+            }
+            h1 {
+                font-size: 6.25rem;
+                line-height: 7rem;
+                font-weight: $base-font-weight + 300;
+                letter-spacing: .15rem;
+                padding-bottom: 1rem;
+            }
+        }
+        .share-section {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            .share {
+                font-size: $font-size-md - 0.25rem;
+                color: $color-light-gray-3;
+            }
+            .socials {
+                display: flex;
+                flex-direction: row;
+                gap: 1rem;
+                border: $border-socials;
+                padding: 0.7rem 1rem;
+                gap: 1rem;
+                border-radius: 0.5rem;
+                img {
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+    img.halfboat {
+        border-top-left-radius: 2.75rem;
+        border-top-right-radius: 2.75rem;
+        max-width: 80rem;
+        width: 100%;
+        @include boat-shadows;
+    }
+    .creator {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 1.5rem;
+        img {
+            width: 6rem;
+            height: 6rem;
+        }
+        .owner-info {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+            p {
+                font-size: $base-font-size;
+            }
+            .creator-name {
+                font-weight: $base-font-weight + 100;
+                font-size: $base-font-size + 0.5rem;
+            }
+            .cto {
+                font-weight: $base-font-weight - 100;
+            }
+            .ig-tag {
+                font-weight: $base-font-weight - 150;
+                color: #9A9BA1;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 80rem) {
+    .hero-section {
+        .hero-card-content {
+            .card-content {
+                .time-read {
+                    font-size: $base-font-size;
+                }
+                h1 {
+                    font-size: $font-size-xl + 1rem;
+                    line-height: 5rem;
+                }
+            }
+            .share-section {
+                display: none;
+            }
+        }
+    }
+}

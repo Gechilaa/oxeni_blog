@@ -10,15 +10,23 @@
         .card-content {
             .time-read {
                 font-size: $font-size-md - 0.25rem;
-                color: $color-light-gray-3;
+                color: #404549;
                 padding-bottom: 1rem;
                 font-weight: $base-font-weight;
+                .tag--black {
+                    opacity: 1 !important;
+                }
                 .period {
                     padding-left: 0.75rem;
                     padding-right: 0.75rem;
+                    opacity: 0.6;
                 }
                 .date {
                     padding-left: 1.5rem;
+                    opacity: 0.6;
+                }
+                .upload-ago {
+                    opacity: 0.6;
                 }
             }
             h1 {
@@ -52,8 +60,10 @@
         }
     }
     img.halfboat {
-        border-top-left-radius: 2.75rem;
-        border-top-right-radius: 2.75rem;
+        border-top-left-radius: 2.56rem;
+        border-top-right-radius: 2.56rem;
+        border: $border-half-boat;
+        border-bottom: 0;
         max-width: 80rem;
         width: 100%;
     }
@@ -63,12 +73,17 @@
         align-items: center;
         gap: 1.5rem;
         img {
-            width: 6rem;
-            height: 6rem;
+            border-radius: 1000px;
+            width: 5.5rem;
+            height: auto;
+            background: #41424D;
+            border: 8px solid #41424D;
+            outline: 8px solid #9A9BA1;
         }
         .owner-info {
             display: flex;
             flex-direction: column;
+            align-items: flex-start;
             gap: 0.5rem;
             p {
                 font-size: $base-font-size;

@@ -203,6 +203,7 @@ button img {
 }
 .card-lists .main-card .profile p {
   font-size: 1.15rem;
+  font-weight: 600;
 }
 .card-lists .main-card .description {
   font-weight: 480;
@@ -262,6 +263,7 @@ button img {
 }
 .card-lists .cards .card .profile p {
   font-size: 1.15rem;
+  font-weight: 600;
 }
 .card-lists .cards .card .picture {
   width: 100%;
@@ -376,6 +378,7 @@ button img {
 }
 .pack-of-cards .cards .card .profile p {
   font-size: 1.15rem;
+  font-weight: 600;
 }
 .pack-of-cards .cards .card .picture {
   width: 100%;
@@ -638,6 +641,7 @@ button img {
 }
 ._container .cards-list .card-columns .profile p {
   font-size: 1.15rem;
+  font-weight: 600;
 }
 ._container .cards-list .card-columns .picture {
   width: 100%;
@@ -717,6 +721,7 @@ button img {
   }
   ._container .cards-list .card-columns .profile p {
     font-size: 1.15rem;
+    font-weight: 600;
   }
   ._container .cards-list .card-columns .picture {
     height: 100% !important;

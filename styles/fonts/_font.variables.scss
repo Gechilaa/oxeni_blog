@@ -1,4 +1,5 @@
 $inter: 'Inter', sans-serif;
+$roboto-mono: 'Roboto Mono', monospace;
 $base-font-weight: 600;
 $base-font-style: normal;
 
@@ -7,3 +8,7 @@ $font-size-sm: $base-font-size * 0.75;
 $font-size-md: $base-font-size * 1.5;
 $font-size-lg: $base-font-size * 2;
 $font-size-xl: $base-font-size * 3;
+
+.zero {
+    font-family: $roboto-mono;
+}

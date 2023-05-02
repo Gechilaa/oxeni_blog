@@ -107,9 +107,6 @@
     .hero-section {
         .hero-card-content {
             .card-content {
-                .time-read {
-                    font-size: $base-font-size;
-                }
                 h1 {
                     font-size: $font-size-xl + 1rem;
                     line-height: 5rem;
@@ -117,6 +114,16 @@
             }
             .share-section {
                 display: none;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 60rem) {
+    .hero-section {
+        .card-content {
+            .time-read {
+                font-size: $base-font-size + 0.2rem !important;
             }
         }
     }

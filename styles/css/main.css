@@ -1,10 +1,14 @@
+.zero {
+  font-family: "Roboto Mono", monospace;
+}
+
 *,
 *::after,
 *::before {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Inter", sans-serif !important;
+  font-family: "Inter", sans-serif;
   scroll-behavior: smooth;
 }
 
@@ -203,7 +207,7 @@ button img {
 }
 .card-lists .main-card .profile p {
   font-size: 1.15rem;
-  font-weight: 600;
+  font-weight: 1rem;
 }
 .card-lists .main-card .description {
   font-weight: 480;
@@ -263,7 +267,7 @@ button img {
 }
 .card-lists .cards .card .profile p {
   font-size: 1.15rem;
-  font-weight: 600;
+  font-weight: 1rem;
 }
 .card-lists .cards .card .picture {
   width: 100%;
@@ -378,7 +382,7 @@ button img {
 }
 .pack-of-cards .cards .card .profile p {
   font-size: 1.15rem;
-  font-weight: 600;
+  font-weight: 1rem;
 }
 .pack-of-cards .cards .card .picture {
   width: 100%;
@@ -520,15 +524,17 @@ button img {
 }
 
 @media screen and (max-width: 80rem) {
-  .hero-section .hero-card-content .card-content .time-read {
-    font-size: 1rem;
-  }
   .hero-section .hero-card-content .card-content h1 {
     font-size: 4rem;
     line-height: 5rem;
   }
   .hero-section .hero-card-content .share-section {
     display: none;
+  }
+}
+@media screen and (max-width: 60rem) {
+  .hero-section .card-content .time-read {
+    font-size: 1.2rem !important;
   }
 }
 ._container .content {
@@ -641,7 +647,7 @@ button img {
 }
 ._container .cards-list .card-columns .profile p {
   font-size: 1.15rem;
-  font-weight: 600;
+  font-weight: 1rem;
 }
 ._container .cards-list .card-columns .picture {
   width: 100%;
@@ -721,7 +727,7 @@ button img {
   }
   ._container .cards-list .card-columns .profile p {
     font-size: 1.15rem;
-    font-weight: 600;
+    font-weight: 1rem;
   }
   ._container .cards-list .card-columns .picture {
     height: 100% !important;
